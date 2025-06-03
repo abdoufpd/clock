@@ -1,0 +1,416 @@
+:root{
+      --green-blue-color:rgb(36, 255, 109);
+      --midgreen-blue-color-mid-transparent:rgba(21, 108, 134, 0.5);
+      --color-1:hsl(155, 26%, 18%);
+      --color-2:rgb(92, 92, 92);
+      --bg-image1-link:url('KIpxP7c.A2sRHJvbXMmSZ_Naqi3hB41dwLOQGe8z/CZBrPS8wyT.sFAGh_0El9JifRO4v2WcxqakVQHnm');
+      --bg-image2-link:url('KIpxP7c.A2sRHJvbXMmSZ_Naqi3hB41dwLOQGe8z/dLN6nWP.FcSkfEVRDBZMT42jG7K0q-JsIyiAegbv');
+
+}
+body{
+      display: none;
+}
+
+.wp{
+      display:block;
+      position: absolute;
+      top:0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      
+      
+      background-image:var(--bg-image1-link) ;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: changbg 10s infinite;
+      
+}
+@keyframes changbg {
+      0%{
+            background-color: var(--color-1);
+            background-image:var(--bg-image2-link);
+            
+      }
+      25%{
+            background-color: var(--color-1);
+            background-image:var(--bg-image2-link);
+         
+      }
+      50%{
+            background-image:var(--bg-image1-link);
+            background-color:var(--color-2);
+            
+      }
+      75%{
+            background-image:var(--bg-image1-link);
+            background-color:var(--color-2);
+            
+      }                        
+      100%{
+            background-color: var(--color-1);
+            background-image:var(--bg-image2-link);
+         
+   }
+}
+.head1{
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+}
+
+#clock{
+      text-align: center;
+      font-size: 5rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin:15% 0;
+      color: #ffff00;
+      text-shadow: #000 0px 0px  10px;
+      backdrop-filter: brightness(1.06);
+  
+      
+      
+}
+.bottom{
+      position:absolute;
+      content: '';
+
+
+      bottom: 0;
+      background:rgba(50, 50, 50, .4) ;
+      text-align: center;
+      width: 100%;
+
+}
+.copyright{
+      text-decoration:solid;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow:0 0 5px white ;
+      
+}
+.bold{
+      font-weight: bolder;
+      
+      
+}
+.wp .options{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left:0;
+      right:0;
+
+
+}
+.wp .open-options-btn{
+      position: absolute;
+      display: inline-block;
+      top:.7rem;
+      left:.7rem;
+      width:2.2rem;
+      height: 2.2rem;
+      background-color: #ccc;
+      border: 2px solid #ccc;
+      border-radius: 1.4rem;
+      z-index: 10;
+      transition: all .3s;
+
+
+}
+
+.wp .open-options-btn:hover ,.wp .open-options-btn:focus{
+      
+      background-color: hsla(0, 0%, 80%, 0.5);
+      box-shadow: rgba(0, 0, 0, 0.651) 0 0 10px;
+}
+.options .blur-layer{
+      
+      background-color:var(--midgreen-blue-color-mid-transparent);
+      backdrop-filter: blur(5px);
+      width:100%;
+      height: 100%;
+}
+.options .options-list-displayer{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left:0;
+      right:0;
+      padding:5% 20%;
+      
+}
+.options .options-list{
+      width:100%;
+      height:100%;
+      background-color: rgb(203, 255, 255);
+      min-height:28.5rem;
+      
+      border-radius: 10px;
+      
+      
+}
+
+.fcch{
+      font:inherit;
+      color:var(--green-blue-color);
+}
+.clock-style .font-size ,.clock-style  .font-color,.bg-styles .background-color, .bg-styles .background-color2,.bg-styles .background-image, .bg-styles .background-image2{
+      font-family: roboto , Arial ,'Courier New', Courier, monospace;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap:.4rem;
+      justify-content: center;
+      
+}
+.clock-style .font-color{
+      margin-left: -56px;
+}
+.clock-style .font-color input, input[type='color']{
+      background-color: #ffff00;
+      color: aqua;
+      border: none;
+      background-color: transparent;
+
+}
+.clock-style .font-size .size-input{
+      outline: none;
+      border:1px solid var(--green-blue-color);
+      border-radius: 5px;
+      font-size: 1.02rem;
+      width:10ch;
+      padding: .01rem;
+      text-align: center;
+      background-color: transparent;
+      color: black;
+      font-weight: 600;
+}
+.bg-styles{
+      height: 60%;
+      bottom: 0;
+      
+      
+      
+}
+.flex-align-center{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      height: 40px;
+      padding-top:1rem;
+      
+}
+.divider{
+
+      width:30%;
+      margin:auto 10px ;
+      border-left: 0;
+      border-right: 0;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      height:3px;
+      display: inline-block;
+      background-color: #000;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      
+
+      
+}
+.flex-align-center .clock-styles-title{
+      display: inline-block;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      
+      
+
+}
+
+.bg-styles .background-image2 input,.bg-styles .background-image input{
+      outline: none;
+      border: 2px solid var(--green-blue-color);
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 2px 5px;
+      font-weight: 500;
+      font-size: 1rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bg-styles .background-image2 input:focus,.bg-styles .background-image input:focus{
+      caret-color: var(--green-blue-color);
+      background-color: #888;
+      box-shadow:rgba(0, 0, 0, 0.404) 0 0 10px ;
+}
+.bg-styles .background-image2 input:focus::placeholder,.bg-styles .background-image input:focus::placeholder{
+      color: #ffff60;
+      opacity: 0.7;
+      
+}
+.options-list .background-color{
+      margin-left: -60px;
+}
+.options-list .background-color2{
+    
+}
+.options-list .background-image{
+      margin-left:-62px;
+}
+.options-list .save-cancel-btn{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+}
+.options-list .save-cancel-btn input{
+      padding:.2rem 1rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.03),rgba(0, 0, 0, 0.03));
+      border-radius: 4px;
+      border: 1px solid #000;
+      transition: all .3s;
+      font-weight: 600;
+
+}
+.options-list .save-cancel-btn input:hover{
+      background: linear-gradient(to top, rgba(0, 0, 155, 0.5),rgba(0, 0, 255, 0.1),rgba(0, 0, 255, 0.1));
+      border: 1px solid rgba(0, 0, 255,0.5);
+      box-shadow: rgba(0, 0, 255,0.3) 0 0 6px;
+
+}
+.options-list .save-cancel-btn input:active{
+      background: linear-gradient(to top, rgba(0, 0, 155, 0.6),rgba(0, 0, 255, 0.2),rgba(0, 0, 255, 0.2));
+      border: 1px solid rgba(0, 0, 255,0.6);
+      box-shadow: rgba(0, 0, 255,0.4) 0 0 6px;
+
+}
+.hide{
+      display: none!important;
+      
+     
+}
+.open-options-btn{
+      background-position:center ;
+      background-size: 85% 85%;
+      background-repeat: no-repeat;
+      
+
+      background-image: url('KIpxP7c.A2sRHJvbXMmSZ_Naqi3hB41dwLOQGe8z/N.F1ATykm5XwV_qJZpBWM79Go0tlsEhc-8gQvPRS');
+}
+.open-options-btn  ,.blur-layer ,.options-list-displayer{
+      transition: all .35s;
+}
+
+.wp .tools{
+      position: absolute;
+      z-index: 12;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      backdrop-filter:blur(3px);
+      background-color: rgba(0, 0, 0, 0.38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.tools .err{
+      position:absolute;
+      content: '';
+      
+      width:50%;
+      height:200px;
+      background-color: rgb(170, 255, 227);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:start;
+      flex-wrap: nowrap;
+      box-shadow: #000 0 0 5px;
+      z-index: 15;
+      padding: 2rem;
+      
+}
+#error .error-content{
+      text-align:justify;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.07rem;
+      font-weight: 600;
+      margin-block-start: 1.2rem;
+}
+#error p{
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-block-start: 0;
+      margin-block-end: 2rem;
+      font-family: monospace,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.red{
+      color: rgb(218, 0, 0);
+}
+#error input[type='button']{
+      position:absolute;
+
+      bottom:2rem; 
+      right: 3rem;
+      padding:.2rem 1rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.03),rgba(0, 0, 0, 0.03));
+      border-radius: 4px;
+      border: 1px solid #000;
+      transition: all .3s;
+      font-weight: 600;
+}
+#error input[type='button']:hover{
+      background: linear-gradient(to top, rgba(0, 0, 155, 0.5),rgba(0, 0, 255, 0.2),rgba(0, 0, 255, 0.2));
+      border: 1px solid rgba(0, 0, 255,0.5);
+      box-shadow: rgba(0, 0, 255,0.3) 0 0 6px;
+}
+#error input[type='button']:active{
+      background: linear-gradient(to top, rgba(0, 0, 155, 0.6),rgba(0, 0, 255, 0.3),rgba(0, 0, 255, 0.3));
+      border: 1px solid rgba(0, 0, 255,0.6);
+      box-shadow: rgba(0, 0, 255,0.4) 0 0 6px;
+}
+.loader{
+      z-index: 17;
+}
+.tools .loader .loaderEm{
+      width: 5rem;
+      height: 5rem;
+      border-radius:50%;
+      background-color: transparent;
+      border: 5px solid #ffff00;
+      animation: loading 1s infinite linear;
+      
+      
+      
+      
+}
+
+.loader .loadertext{
+      font-family: monospace, 'Courier New', Courier, monospace;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 20px;
+      text-shadow: #ffff00 0 0 2px;
+}
+@keyframes loading{
+      0%{
+            border-left-color: transparent;
+      }
+      25%{
+            border-bottom-color: transparent;
+      }
+      50%{
+            border-right-color: transparent;
+      }
+      75%{
+            border-top-color: transparent;
+      }
+      100%{
+            border: 5px solid #ffff00;
+      }
+}
